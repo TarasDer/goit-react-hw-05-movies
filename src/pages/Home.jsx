@@ -13,7 +13,6 @@ const Home = () => {
       try {
         const { data } = await getMovies(params);
         setTrendingMovies(data.results);
-        console.log(data.results);
       } catch (error) {
         console.log(error);
       }
